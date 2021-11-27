@@ -25,3 +25,7 @@
   - Log out
 
 ![image](https://user-images.githubusercontent.com/93103123/143672548-05a716a8-7c74-4e46-8bba-cfeef5dfd0f3.png)
+
+- Logging in as an admin user shows a different set of options
+
+![image](https://user-images.githubusercontent.com/93103123/143672590-c951bae5-97ae-4bd9-86c0-f28b9c5966dd.png)
