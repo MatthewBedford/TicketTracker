@@ -86,7 +86,6 @@ int main()
             int userInput;
             if(username == "admin")
             {
-                cout << "IN ADMIN" << endl;
                 cout << endl;
                 cout << "1. Print Report" << endl;
                 cout << "2. Logout" << endl;
@@ -98,7 +97,6 @@ int main()
                 }
                 if(userInput == 1)
                 {
-                    cout << "IN ADMIN1" << endl;
                     int totalOpen = 0;
                     int totalReserved = 0;
                     int totalAdult = 0;
@@ -123,12 +121,10 @@ int main()
                 }
                 else if(userInput == 2)
                 {
-                    cout << "IN ADMIN2" << endl;
                     logOut = true;
                 }
                 else if(userInput == 3)
                 {
-                    cout << "IN ADMIN3" << endl;
                     exit = true;
                     logOut = true;
                     A1.writeToOutfile("A1Final.txt");
@@ -138,7 +134,6 @@ int main()
             }
             else
             {
-                cout << "IN USER" << endl;
                 cout << endl;
                 cout << "1. Reserve Seats" << endl;
                 cout << "2. View Orders" << endl;
@@ -154,7 +149,6 @@ int main()
                 int userInput2;
                 if(userInput == 1)
                 {
-                    cout << "IN USER1" << endl;
                     order newOrder;
                     cout << endl;
                     cout << "1. Auditorium 1" << endl;
@@ -220,7 +214,6 @@ int main()
 
                     bool rand = false;
 
-                    cout << "BEFORE RESERVATION" << endl;
                     if(userInput2 == 1)
                     {
                         A1.reserveSeats(rowNum, colLetter, adultNum, childNum, seniorNum, newOrder.seats, rand);
@@ -233,7 +226,6 @@ int main()
                     {
                         A3.reserveSeats(rowNum, colLetter, adultNum, childNum, seniorNum, newOrder.seats, rand);
                     }
-                    cout << "AFTER RESERVATION" << endl;
 
                     if(newOrder.seats.size() > 0)
                     {
@@ -244,7 +236,6 @@ int main()
                 }
                 else if(userInput == 2)
                 {
-                    cout << "IN USER2" << endl;
                     if(customerOrders[username].size() > 1)
                     {
                         order tempOrder = customerOrders[username].front();
@@ -282,7 +273,6 @@ int main()
                 }
                 else if(userInput == 3)
                 {
-                    cout << "IN USER3" << endl;
                     int counter = 1;
                     if(customerOrders[username].size() > 1)
                     {
@@ -439,7 +429,6 @@ int main()
                 }
                 else if(userInput == 4)
                 {
-                    cout << "IN USER4" << endl;
                     double totalSales = 0.00;
                     if(customerOrders[username].size() > 1)
                     {
@@ -492,7 +481,6 @@ int main()
                 }
                 else if(userInput == 5)
                 {
-                    cout << "IN USER5" << endl;
                     logOut = true;
                 }
             }
